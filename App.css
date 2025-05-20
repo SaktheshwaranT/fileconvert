@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #0d0d2b 0%, #000000 100%);
+  color: #ffffff;
+}
+
+.App {
+  text-align: center;
+  padding-top: 5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Top Navigation */
+.navbar {
+  position:fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #a06ff8;
+  text-shadow: 0 0 10px #a06ff8;
+}
+
+nav a{
+  margin-left: 1.8rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #a06ff8;
+}
+
+/* Welcome Text */
+.floating-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: float 4s ease-in-out infinite;
+  color: #ffffff;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+p {
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+}
+
+.upload-btn {
+  display: inline-block;
+  margin: 1.5rem auto;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(90deg, #f94f8e, #a06ff8);
+  color: white;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  opacity: 0.9;
+}
+
+.file-name {
+  font-size: 1rem;
+  color: #a0a0a0;
+  margin-bottom: 1rem;
+}
+
+.chart-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+
+.chart-buttons button {
+  background: transparent;
+  border: 2px solid #a06ff8;
+  color: white;
+  border-radius: 9999px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chart-buttons button:hover {
+  background-color: #a06ff8;
+  color: black;
+}
+
+.chart-container {
+  margin-top: 2rem;
+  background-color: #1a1a2e;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(160, 111, 248, 0.2);
+}
+
+.download-btn {
+  margin-top: 1rem;
+  background-color: white;
+  color: black;
+  padding: 0.8rem 2rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #a06ff8;
+  color: white;
+}
